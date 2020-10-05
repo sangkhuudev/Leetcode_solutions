@@ -10,4 +10,13 @@ function removeElement(arr,val){
 
     return arr
 }
-
+function removeElement2(nums,val){
+    let i = 0;
+    for (let element of nums) {
+        if (element != val) {
+            nums[i] = element;
+            i++;
+        }
+    }
+    return i;
+}
