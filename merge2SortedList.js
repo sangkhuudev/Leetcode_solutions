@@ -18,3 +18,24 @@ function mergeSort(arr1,arr2){
 }
 console.log(mergeSort(a,b))
 //console.log(b.slice(4))
+// Method of LinkList
+let mergeTwoLists = function(l1, l2) {
+    let p1=l1;
+    let p2=l2;
+    let dummy=new ListNode();
+    let current=dummy;
+   
+    while(p1 && p2){
+        if(p1.val<=p2.val){
+            current.next=p1;
+            p1=p1.next;
+        }
+        else{
+            current.next=p2;
+            p2=p2.next;
+        }
+        current=current.next;
+    }
+    current.next= p1 || p2;
+    return dummy.next;
+};
