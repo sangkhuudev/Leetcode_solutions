@@ -3,8 +3,7 @@
  * @param {number} target
  * @return {number}
  */
-const a=[1,2,2,4,5,5,6]
-const b=[1]
+// ver 1
 function searchTarget(nums,low,high,target){
      if(high<low) return low;
      let mid=Math.floor(low+(high-low)/2);
@@ -17,5 +16,9 @@ function searchTarget(nums,low,high,target){
         return searchTarget(nums,mid+1,high,target)
      }
 }
-console.log(searchTarget(a,0,a.length-1,7))
-console.log(searchTarget(b,0,b.length-1,0))
+// ver 2 
+function searchTarget2(nums,target){
+    let i=0;
+    while(nums[i]<target) i++;
+    return i
+}
