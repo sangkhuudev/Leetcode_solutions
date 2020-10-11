@@ -9,10 +9,9 @@ function findErrorNum(nums){
     },{});
     let sum=nums.reduce((acc,num)=>{return acc+num},0); 
     let checkSum=nums.length*(nums.length+1)/2
-    let distance= sum-checkSum 
    for(let i=0;i<nums.length;i++){ 
         if(hash[nums[i]]!=1){
-            return [nums[i],nums[i]-distance];        
+            return [nums[i],nums[i]-sum-checkSum];        
         }      
     }  
 }
