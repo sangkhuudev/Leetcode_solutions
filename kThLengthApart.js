@@ -13,3 +13,4 @@ function kLengthApart(nums,k){
     }
     return true
 }
+
