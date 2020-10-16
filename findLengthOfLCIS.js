@@ -13,5 +13,5 @@ function findLengthOfLCIS(nums){
          max=Math.max(count,max);
          count=1;
      }
-     return max>=1 ? max : 1
+     return nums.length<=1 ? nums.length : max
 }
