@@ -11,5 +11,3 @@ function findSpecialInteger(arr){
         if(val>arr.length/4) return key
     }
 }
-const a=[1,2,2,6,6,6,6,7,10]
-console.log(findSpecialInteger(a))
