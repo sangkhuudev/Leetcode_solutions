@@ -28,7 +28,7 @@ function middleNode(head){
 function middleNode2(head){
     let fastNode=head;
     let slowNode=head;
-    while(fastNode !==null || fastNode.next !==null){
+    while(fastNode !==null && fastNode.next !==null){
         fastNode=fastNode.next.next;
         slowNode=slowNode.next
     }
