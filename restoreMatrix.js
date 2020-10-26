@@ -14,6 +14,3 @@ function restoreMatrix(rowSum,colSum){
      }
      return matrix
 }
-const rowSum = [5,7,10];
-const colSum = [8,6,8];
-console.log(restoreMatrix(rowSum,colSum))
