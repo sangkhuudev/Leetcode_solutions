@@ -5,7 +5,12 @@
 		},
 		{
 			"path": "..\\..\\..\\..\\..\\Programming\\Algorithm Toolbox"
+		},
+		{
+			"path": "..\\FullStackCourse"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FullStackCourse"
+	}
 }
