@@ -23,7 +23,7 @@ function maxSumAfterPartitioning(arr,k){
  * For each number in the arr[i] it "tries on" different partition sizes from 1 to k, all the while
  * holding the biggest number within that partition.
  * Then sees if it will produce the max sum by multiplying that max num by the partition size, 
- * and adding that to the max sum that's alrady been calculated until that partition (in memo[i - partition size]).
+ * and adding that to the max sum that's already been calculated until that partition (in memo[i - partition size]).
  * 
  * For example: arr=[8, 4, 7], k=2
  * memo[0] = can only have partition size of 1 so it will be the value 8
@@ -38,5 +38,5 @@ function maxSumAfterPartitioning(arr,k){
  * so the answer is the memo[] of the last index: 24.
  * 
  * Runtime complexity - say N=arr.length then complexity is O(N*k). Each number in array tries different partition sizes.
- * Space complexityy - O(N) for memo[] for every value in arr[].
+ * Space complexity - O(N) for memo[] for every value in arr[].
  **/
