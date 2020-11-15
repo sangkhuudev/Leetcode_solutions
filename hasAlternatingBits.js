@@ -5,7 +5,6 @@
 // ver 1
 function hasAlternatingBits(n){
     let arr= n.toString(2).split('').map(Number);
-    console.log(arr)
     for(let i=0; i+1<arr.length;++i){
         if(arr[i]==arr[i+1]) return false;
     }
