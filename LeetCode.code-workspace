@@ -1,15 +1,19 @@
 {
 	"folders": [
 		{
+			"name": "Approach-Leetcode",
 			"path": "."
 		},
 		{
+			"name": "Algorithm Toolbox",
 			"path": "..\\..\\..\\..\\..\\Programming\\Algorithm Toolbox"
 		},
 		{
+			"name": "FullStackCourse",
 			"path": "..\\FullStackCourse"
 		},
 		{
+			"name": "Fullstack_Udacity",
 			"path": "..\\Fullstack_Udacity"
 		}
 	],
