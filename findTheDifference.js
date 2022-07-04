@@ -28,3 +28,10 @@ function findTheDifference2( s,t) {
     xorAcc^= t[i].charCodeAt();
     return String.fromCharCode(xorAcc)
 }
+
+// ver 3 : using reduce method
+function findTheDifference3( s,t) {
+    let sum1 = s.split('').reduce((acc,current) => acc+current.charCodeAt(0),0);
+    let sum2 = t.split('').reduce((acc,current) => acc+current.charCodeAt(0),0);
+    return String.fromCharCode(sum2-sum1)
+}
